@@ -1,0 +1,52 @@
+[DEBUG] 02:02:27:361 orquestador/(2861:2880): //////////////////////////////////////COMIENZO DEL ORQUESTADOR//////////////////////////////////////
+[DEBUG] 02:02:30:151 orquestador/(2861:2880): Nueva conexion de NIVEL IP:127.0.0.1 PUERTO:5124
+[DEBUG] 02:02:30:151 orquestador/(2861:2880): levanto el planificador DeadLock
+[DEBUG] 02:02:39:296 orquestador/(2861:2880): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50913
+[DEBUG] 02:02:40:547 orquestador/(2861:2880): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50916
+[DEBUG] 02:02:42:149 orquestador/(2861:2880): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50919
+[DEBUG] 02:02:43:139 orquestador/(2861:2880): Quedan 3 Personajes
+[DEBUG] 02:02:43:139 orquestador/(2861:2880): Me llega: DeadLock y 1B|1H
+[DEBUG] 02:02:43:139 orquestador/(2861:2880): perosnajes en la coal de bloqueados: 0
+[DEBUG] 02:02:43:811 orquestador/(2861:2880): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50923
+[DEBUG] 02:02:55:163 orquestador/(2861:2880): Mensaje de deadlock: DeadLock y Mario, Luigi, Goomba
+[DEBUG] 02:02:55:163 orquestador/(2861:2880): personajes del planificador
+[DEBUG] 02:02:55:163 orquestador/(2861:2880): personajes: Tortuga Mario Luigi Goomba 
+[DEBUG] 02:02:55:163 orquestador/(2861:2880): personajes del orquestador
+[DEBUG] 02:02:55:163 orquestador/(2861:2880): personajes: DeadLock DeadLock DeadLock DeadLock 
+[DEBUG] 02:02:55:164 orquestador/(2861:2880): Me llega: DeadLock y 1H
+[DEBUG] 02:02:55:164 orquestador/(2861:2880): perosnajes en la coal de bloqueados: 2
+[DEBUG] 02:02:55:165 orquestador/(2861:2880): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50926
+[DEBUG] 02:02:55:270 orquestador/(2861:2880): Quedan 2 Personajes
+[DEBUG] 02:02:55:270 orquestador/(2861:2880): Me llega: DeadLock y 1Z|1H
+[DEBUG] 02:02:55:270 orquestador/(2861:2880): perosnajes en la coal de bloqueados: 1
+[DEBUG] 02:02:55:473 orquestador/(2861:2880): Quedan 1 Personajes
+[DEBUG] 02:02:55:473 orquestador/(2861:2880): Me llega: DeadLock y 1M|1Z
+[DEBUG] 02:02:55:473 orquestador/(2861:2880): perosnajes en la coal de bloqueados: 0
+[DEBUG] 02:02:59:9 orquestador/(2861:2880): Quedan 0 Personajes
+[DEBUG] 02:03:46:241 orquestador/(2953:2958): //////////////////////////////////////COMIENZO DEL ORQUESTADOR//////////////////////////////////////
+[DEBUG] 02:03:48:634 orquestador/(2953:2958): Nueva conexion de NIVEL IP:127.0.0.1 PUERTO:5124
+[DEBUG] 02:03:48:635 orquestador/(2953:2958): levanto el planificador DeadLock
+[DEBUG] 02:03:54:175 orquestador/(2953:2958): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50933
+[DEBUG] 02:03:55:281 orquestador/(2953:2958): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50936
+[DEBUG] 02:03:56:461 orquestador/(2953:2958): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50939
+[DEBUG] 02:03:57:840 orquestador/(2953:2958): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50942
+[DEBUG] 02:04:13:645 orquestador/(2953:2958): Mensaje de deadlock: DeadLock y Mario, Luigi, Goomba, Tortuga
+[DEBUG] 02:04:13:646 orquestador/(2953:2958): personajes del planificador
+[DEBUG] 02:04:13:646 orquestador/(2953:2958): personajes: Mario Luigi Goomba Tortuga 
+[DEBUG] 02:04:13:646 orquestador/(2953:2958): personajes del orquestador
+[DEBUG] 02:04:13:646 orquestador/(2953:2958): personajes: DeadLock DeadLock DeadLock DeadLock 
+[DEBUG] 02:04:13:646 orquestador/(2953:2958): Me llega: DeadLock y 1H
+[DEBUG] 02:04:13:646 orquestador/(2953:2958): perosnajes en la coal de bloqueados: 3
+[DEBUG] 02:04:13:647 orquestador/(2953:2958): Nueva conexion de PERSONAJE IP:127.0.0.1 PUERTO:50945
+[DEBUG] 02:04:13:753 orquestador/(2953:2958): Quedan 3 Personajes
+[DEBUG] 02:04:13:753 orquestador/(2953:2958): Me llega: DeadLock y 1B|1H
+[DEBUG] 02:04:13:754 orquestador/(2953:2958): perosnajes en la coal de bloqueados: 2
+[DEBUG] 02:04:13:956 orquestador/(2953:2958): Quedan 2 Personajes
+[DEBUG] 02:04:13:957 orquestador/(2953:2958): Me llega: DeadLock y 1Z|1H
+[DEBUG] 02:04:13:957 orquestador/(2953:2958): perosnajes en la coal de bloqueados: 1
+[DEBUG] 02:04:14:161 orquestador/(2953:2958): Quedan 1 Personajes
+[DEBUG] 02:04:14:161 orquestador/(2953:2958): Me llega: DeadLock y 1M|1Z
+[DEBUG] 02:04:14:161 orquestador/(2953:2958): perosnajes en la coal de bloqueados: 0
+[DEBUG] 02:04:17:591 orquestador/(2953:2958): Me llega: DeadLock y 1H|1M
+[DEBUG] 02:04:17:591 orquestador/(2953:2958): perosnajes en la coal de bloqueados: 0
+[DEBUG] 02:04:17:593 orquestador/(2953:2958): Quedan 0 Personajes
