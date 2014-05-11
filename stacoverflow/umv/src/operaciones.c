@@ -21,7 +21,7 @@ char * leer(int pid, int base,int offset,int tamanio){
 
 
 
-	return "";
+	return "holaaaaaaaaa";
 }
 
 int grabar(int pid, int base,int offset,int tamanio,char* contenido){

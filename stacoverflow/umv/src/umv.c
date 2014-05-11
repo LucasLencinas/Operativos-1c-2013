@@ -22,7 +22,7 @@ t_list* segmentos;
 
 
 int main(void) {
-	char* peticion = malloc(sizeof(char)*200);
+	char peticion[1024];
 	char** arrayPeticion;
 	char* lectura;
 	int param;
@@ -38,28 +38,35 @@ int main(void) {
 
 	printf("Inicio de la UMV\n");
 	printf("Ingrese los comandos para operar sobre la memoria:\n");
-	scanf("%s", peticion);
+	fgets(peticion,1024,stdin);
 	arrayPeticion = string_split(peticion," ");
 
 	while(!string_equals_ignore_case(arrayPeticion[0],"quit")){
-
+		int numero;
 		if(string_equals_ignore_case(arrayPeticion[0],"grabar")){
-			for (param = 1; param < 5; param++)
-				if(!isdigit(arrayPeticion[param])){
-					printf("Error en parametro numero %d.\nIntente nuevamente:\n",param);
+
+			for (param = 1; param < 5; param++){
+				numero = atoi(arrayPeticion[param]);
+				if(numero == 0 && arrayPeticion[param][0] != '0'){
+					printf("Error en parametro numero %d.\n",param);
 					error = true;
 				}
-			if(!error)
-				grabar(atoi(arrayPeticion[1]),atoi(arrayPeticion[2]),atoi(arrayPeticion[3]),
+			}
+			if(!error){
+				numero = grabar(atoi(arrayPeticion[1]),atoi(arrayPeticion[2]),atoi(arrayPeticion[3]),
 						atoi(arrayPeticion[4]),arrayPeticion[5]);
+				if(numero ==1)
+					printf("Se grabo correctamente\n");
+			}
 
 		}else
 			if(string_equals_ignore_case(arrayPeticion[0],"leer")){
 				for (param = 1; param < 5; param++)
-					if(!isdigit(arrayPeticion[param])){
-						printf("Error en parametro numero %d.\nIntente nuevamente:\n",param);
-						error = true;
-					}
+					numero = atoi(arrayPeticion[param]);
+						if(numero == 0 && arrayPeticion[param][0] != '0'){
+							printf("Error en parametro numero %d.\n",param);
+							error = true;
+						}
 				if(!error){
 					lectura = leer(atoi(arrayPeticion[1]),atoi(arrayPeticion[2]),
 						atoi(arrayPeticion[3]),atoi(arrayPeticion[4]));
@@ -84,7 +91,7 @@ int main(void) {
 									if(string_equals_ignore_case(arrayPeticion[0],"dump")){
 
 									}
-		scanf("%s", peticion);
+		fgets(peticion,1024,stdin);
 		arrayPeticion = string_split(peticion," ");
 	}
 
