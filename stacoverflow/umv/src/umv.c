@@ -38,6 +38,9 @@ int main(void) {
 
 	printf("Inicio de la UMV\n");
 	printf("Ingrese los comandos para operar sobre la memoria:\n");
+
+    printf("ANSISOP_CONFIG : %s\n", getenv("ANSISOP_CONFIG"));
+
 	fgets(peticion,1024,stdin);
 	arrayPeticion = string_split(peticion," ");
 
