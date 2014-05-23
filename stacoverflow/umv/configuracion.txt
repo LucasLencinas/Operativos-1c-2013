@@ -1,0 +1,1 @@
+size_memoria=1000

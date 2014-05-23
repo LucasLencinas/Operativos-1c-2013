@@ -27,8 +27,12 @@ int main(void) {
 	char* lectura;
 	int param;
 	bool error = false;
+	t_configuracion* config=   malloc(sizeof(t_configuracion));
 
-	memoria = malloc(sizeof(char)*1000);
+	//cargarConfiguracion(config,getenv("ANSISOP_CONFIG"));
+	cargarConfiguracion(config,"/home/utnso/Operativos-1c-2013/stacoverflow/umv/configuracion.txt");
+
+	memoria = malloc(sizeof(char)*config->size_memoria);
 	segmentos=list_create();
 	t_segmento* segmento = malloc(sizeof(t_segmento));
 	segmento->libre = false;
@@ -39,7 +43,7 @@ int main(void) {
 	printf("Inicio de la UMV\n");
 	printf("Ingrese los comandos para operar sobre la memoria:\n");
 
-    printf("ANSISOP_CONFIG : %s\n", getenv("ANSISOP_CONFIG"));
+
 
 	fgets(peticion,1024,stdin);
 	arrayPeticion = string_split(peticion," ");
@@ -102,3 +106,18 @@ int main(void) {
 
 	return EXIT_SUCCESS;
 }
+
+
+void cargarConfiguracion(t_configuracion* umvConfig,char* dir_config){
+
+	t_config* config=config_create(dir_config);
+
+	printf("%s\n",dir_config);
+	printf("%d\n",config_keys_amount(config));
+
+	umvConfig->size_memoria=config_get_int_value(config,"size_memoria");
+
+}
+
+
+

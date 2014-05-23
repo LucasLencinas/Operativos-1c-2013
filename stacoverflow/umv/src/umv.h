@@ -17,6 +17,12 @@ typedef struct{
 	bool libre;
 }t_segmento;
 
+typedef struct{
+	int size_memoria;
+}t_configuracion;
+
+
+void cargarConfiguracion(t_configuracion* config,char* dir_config);
 char * leer(int pid, int base,int offset,int tamanio);
 int grabar(int pid, int base,int offset,int tamanio,char* contenido);
 
