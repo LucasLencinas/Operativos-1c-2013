@@ -12,4 +12,5 @@
  - Sockets
  - Semaphores
  - ncurses
+ - make
  
